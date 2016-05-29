@@ -17,10 +17,8 @@ setup(
         license = "BSD",
         keywords = "superSimpleStocks trading basic",
         packages=['superSimpleStocks', 'test'],
-        long_description=read('README'),
+        long_description=read('README.md'),
         classifiers=[
-                    "Development Status :: 3 - Alpha",
-                    "Topic :: Utilities",
                     "License :: OSI Approved :: BSD License",
                 ],
 )
