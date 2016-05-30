@@ -23,8 +23,8 @@ class stock(object):
     
     def dividend_yield(self,price):
         """Bound method, takes float argument. calculates dividend yield according to
-        Dividend Yield = Last Dividend / price if common stock
-        Dividend Yield = (Fixed Dividend * Par Value) / price """ 
+        Dividend Yield = Last Dividend / price  - if common stock
+        Dividend Yield = (Fixed Dividend * Par Value) / price - if preferred stock""" 
         if self.typ == 'common':
             try:
                 return self.ldiv / float(price)

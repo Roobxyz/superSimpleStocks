@@ -67,8 +67,8 @@ defined as price/Last Dividend</p>
 <dt id="simpleStocks.stock.dividend_yield">
 <code class="descname">dividend_yield</code><span class="sig-paren">(</span><em>price</em><span class="sig-paren">)</span><a class="headerlink" href="#simpleStocks.stock.dividend_yield" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bound method, takes float argument. calculates dividend yield according to
-Dividend Yield = Last Dividend / price if common stock
-Dividend Yield = (Fixed Dividend * Par Value) / price</p>
+Dividend Yield = Last Dividend / price  - if common stock
+Dividend Yield = (Fixed Dividend * Par Value) / price - if preferred stock</p>
 </dd></dl>
 
 <dl class="method">
@@ -116,7 +116,7 @@ and some sorting/subset selection on the trades</p>
 <dl class="method">
 <dt id="simpleStocksImplementation.GBCE_exchange.GBCE_index">
 <code class="descname">GBCE_index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#simpleStocksImplementation.GBCE_exchange.GBCE_index" title="Permalink to this definition">¶</a></dt>
-<dd><p>Method to compute and return the GBCE_index</p>
+<dd><p>Method to compute and return the GBCE_index. Defined as the arithmetic mean of the <a href="#id1"><span class="problematic" id="id2">:function:`vwap`</span></a> of each traded sym</p>
 </dd></dl>
 
 <dl class="method">
