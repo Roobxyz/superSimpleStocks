@@ -72,7 +72,7 @@ class GBCE_exchange(object):
         return vwap_amt
 
     def GBCE_index(self):
-        """ Method to compute and return the GBCE_index. Defined as the arithmetic mean of the :function:`vwap` of each traded sym"""
+        """ Method to compute and return the GBCE_index. Defined as the arithmetic mean of the :func:`vwap` of each traded sym"""
         print('Getting GBCE index via arithmetic mean')
         traded_syms = set([i.stock.sym for i in self.trades])
         n = len(traded_syms)
