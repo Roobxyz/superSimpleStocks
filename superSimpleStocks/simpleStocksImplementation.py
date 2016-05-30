@@ -56,7 +56,7 @@ class GBCE_exchange(object):
 
     def vwap( self, sym ):
         """Method to calculate and return the Volume Weighted Average Price (VWAP)
-        utilizes get_trades_by_sym and get_trades_asof Methods
+        utilizes :func:`get_trades_by_sym` and :func:`get_trades_asof` Methods
         takes sym as argument and returns vwap for sym ( for trades as of 5 mins ago )"""
       
         trades = self.get_trades_by_sym( sym )
