@@ -83,7 +83,16 @@ class trade(object):
        return '%s %s units %s at %s | %s ' % (self.status(), self.qty, self.stock, self.price, self.timestamp)
     
     def status(self):
+        """string to show if trade has been 'Bought' 'B' or 'Sold' 'S' """
         if self.buysell =='S':
             return 'Sold'
         elif self.buysell == 'B':
             return 'Bought'
+
+    def PE_ratio(self):
+        """calculates P/E ratio as given by :class:`stock` uses instance of the :class:`trade` price"""
+        return self.stock.PE_ratio(self.price)
+
+    def dividend_yield(self):
+        """calculates dividend yield as given by :class:`stock` uses instance of the :class:`trade` price"""
+        return self.stock.dividend_yield(self.price)
